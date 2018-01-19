@@ -1,12 +1,25 @@
-﻿<Window x:Class="MacroRecorder.MainWindow"
+﻿<Controls:MetroWindow x:Class="MacroRecorder.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MacroRecorder"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         mc:Ignorable="d"
-        Title="MacroRecorder" Height="350" Width="525">
+        Title="MacroRecorder" Height="350" Width="525"
+        ResizeMode="CanResizeWithGrip"
+        GlowBrush="#2B79DA"
+        WindowStartupLocation="CenterScreen">
+
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button>
+                <Image Source="/images/settings.png"/>
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+
     <Grid>
         
     </Grid>
-</Window>
+</Controls:MetroWindow>
